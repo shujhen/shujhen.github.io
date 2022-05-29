@@ -6,12 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anna Dong's Personal Website</title>
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="/portfolio" target="_blank" rel="noopener noreferrer">所有作品集</a></li>
+  <nav class="header">
+    <ul class="nav">
+      <li class="flex-1">關於我</li>
+      <li class="flex-1">作品集</li>
+      <li class="flex-1">聯絡我</li>
     </ul>
   </nav>
+  <div class="main">
+    <section class="about flex">
+      <div class="aside flex-1"></div>
+      <div class="article flex-2"></div>
+    </section>
+    <section class="portfolio flex">
+      <div class="article flex-1"></div>
+      <div class="aside flex-1"></div>
+      <div class="article flex-1"></div>
+    </section>
+    <section class="contact flex">
+      <div class="article flex-2"></div>
+      <div class="aside flex-1"></div>
+    </section>
+  </div>
+  <div class="footer"></div>
 </body>
 </html>

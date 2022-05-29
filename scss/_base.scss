@@ -1,0 +1,67 @@
+@import 'variable';
+@import 'reset';
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: $bg-color;
+  color: $white;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+a {
+  text-decoration: none;
+}
+.flex {
+  display: flex;
+}
+.flex-1 {
+  flex: 1;
+}
+.flex-2 {
+  flex: 2;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  li {
+    padding: 13px 0px 14px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 10px;
+    text-align: center;
+    cursor: pointer;
+
+    &:nth-child(1) {
+      background-color: $red;
+    }
+    &:nth-child(2) {
+      background-color: $yellow;
+    }
+    &:nth-child(3) {
+      background-color: $green;
+    }
+  }
+}
+.main{
+  .aside{
+    height: calc(100vh - 50px);
+    width: calc(100% / 3);
+  }
+  .about .aside {
+    background-color: $red;
+  }
+  .portfolio .aside {
+    background-color: $yellow;
+  }
+  .contact .aside {
+    background-color: $green;
+  }
+}
